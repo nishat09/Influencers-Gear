@@ -250,6 +250,7 @@ footer p{
 
 
 /* media query  */
+/* mobile-phone */
 
 @media only screen and (max-width:688px) {
     .top{
@@ -265,6 +266,10 @@ footer p{
         width: 100%;
         height: 5%;
         text-align: center;
+    }
+
+    .heading>h1{
+        width: 100%;
     }
     .main-pic{
         width: 100%;
@@ -283,6 +288,11 @@ footer p{
         width: 100%;
         height: 100%;
         padding-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .mid-main>p{
+        width: 100%;
     }
     .items{
         display: grid;
@@ -325,4 +335,88 @@ footer p{
         height: 100%;
         font-size: 14px;
     }
+}
+
+
+/* tab/ipad */
+@media only screen and (max-width:1025px) and (min-width:689px) {
+
+
+    .top{
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+
+    .heading h1,button{
+        width: 100%;
+    }
+    .heading>p{
+        width: 80%;
+    }
+
+    .main-pic{
+        width: 65%;
+        margin-top: 620px;
+        padding-right: 150px;
+        margin-left: 440px;
+    }
+
+    .main-pic img{
+        width: 60%;
+    }
+
+    .mid{
+        width: 100%;
+        margin-left: 2px;
+    }
+    .mid-main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2px;
+
+    }
+    #see-more{
+        width: 100%;
+        font-size: 2em;
+        padding-right: 280px;
+        margin-left: 800px;
+    }
+
+    .items{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr)
+    }
+
+    .item{
+        width: 100%;
+    }
+    .item img{
+        width: 100%;
+
+    }
+
+    .Bonus{
+        margin-top: 1100px;
+        margin-bottom: 250px;
+    }
+
+    article{
+        display: flex;
+    }
+
+    article img,h3{
+        width: 100%;
+
+    }
+
+
 }
